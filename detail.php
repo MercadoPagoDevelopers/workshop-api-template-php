@@ -1,12 +1,3 @@
-<?php
-
-    require_once 'vendor/autoload.php';
-
-    MercadoPago\SDK::setAccessToken("TEST-555894209657742-022517-d6f9fa55ba6a66797760d013da8d49b7__LA_LB__-181662021");
-
-    $payment_methods = MercadoPago::get("/v1/payment_methods");
-    var_dump($payment_methods);
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -78,6 +69,16 @@
                                 <label for="docNumber">Número de documento</label>
                                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
                             </div>
+
+                            <div id="issuerInput">
+                                <label for="tipo-pago">Tipo de pago</label>
+                                <select id="tipo-pago" name="tipo-pago">
+                                    <option value="rapipago">Rapipago</option>
+                                    <option value="redlink">RedLink</option>
+                                    <option value="tarjeta">Tarjeta</option>
+                                </select>
+                            </div>
+
                             </div>
                         <h3>Detalles de la tarjeta</h3>
                             <div>
