@@ -3,7 +3,7 @@
 
     require_once 'vendor/autoload.php';
 
-    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+    MercadoPago\SDK::setAccessToken("TEST-555894209657742-022517-d6f9fa55ba6a66797760d013da8d49b7__LA_LB__-181662021");
 
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = (float)$_POST['transactionAmount'];
