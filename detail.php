@@ -5,7 +5,7 @@
     MercadoPago\SDK::setAccessToken("TEST-555894209657742-022517-d6f9fa55ba6a66797760d013da8d49b7__LA_LB__-181662021");
 
     $payment_methods = MercadoPago::get("/v1/payment_methods");
-    var_dump('$payment_methods');
+    var_dump($payment_methods);
 ?>
 <!DOCTYPE html>
 <html>
