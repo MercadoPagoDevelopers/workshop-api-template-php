@@ -1,5 +1,8 @@
 {
     "name": "mp-ecommerce-php",
     "type": "project",
-    "require": {}
+    "require": {
+        "mercadopago/dx-php": "2.0.0",
+        "ext-json": "*"
+    }
 }
